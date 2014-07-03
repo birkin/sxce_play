@@ -10,9 +10,9 @@
 		<year>1985</year>
 	</cd>
 
-	<xi:include href="test_includes.xml">
+	<xi:include href="include.xml">
        <xi:fallback>
-          <p>The Publications Statement should appear in this space. (c) Brown University</p>
+          <p>some fallback text</p>
        </xi:fallback>
     </xi:include>
 </catalog>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+
+    	<h1>TESTING...</h1>
+
+    	<script type="text/javascript" language="javascript" src="saxonce/Saxonce.nocache.js"></script>
+    	<script type="text/javascript">
+    	    // Initializing SaxonCE client-side XSL transformation
+    	    // Documentation at http://www.saxonica.com/ce/index.xml
+    	    var onSaxonLoad = function() {
+    	        var processor = Saxon.run({
+    	            stylesheet: "stylesheet.xsl",
+    	            source: "data.xml"
+    	        });
+    	    };
+    	</script>
+
+    </body>
+</html>
