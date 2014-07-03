@@ -6,10 +6,10 @@ There's practically no display output in 'output.html'.
 
 What's _supposed_ to happen is that when viewing 'output.html' in a browser:
 
-    First, 'data.xml', which natively contains data about the 'Empire Burlesque' CD, sucks in (via xinclude) the data about the 'Hide your heart' CD in 'include.xml'. At this point, 'data.xml' could be thought to contain data about both CDs.
+- First, 'data.xml', which natively contains data about the 'Empire Burlesque' CD, sucks in (via xinclude) the data about the 'Hide your heart' CD in 'include.xml'. At this point, 'data.xml' could be thought to contain data about both CDs.
 
-    Then, the _two_ CDs from 'data.xml' are tranformed into html using 'stylesheet.xsl'.
+- Then, the _two_ CDs from 'data.xml' are tranformed into html using 'stylesheet.xsl'.
 
-At this point, only the native Empire Burlesque CD is displayed, indicating that saxon-ce is performing the transform, but that the x-include is not working.
+At this point, only the native Empire Burlesque CD is displayed, indicating that saxon-ce is performing the transform, but that the xinclude is not working.
 
 To be continued...
