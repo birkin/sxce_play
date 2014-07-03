@@ -1,0 +1,10 @@
+*.log
+*.pyc
+*httpd.conf
+*pycache*
+.DS_Store
+.hg
+.svn
+env
+env*
+

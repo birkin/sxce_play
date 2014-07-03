@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<catalog xmlns:xi="http://www.w3.org/2001/XInclude">
+	<cd>
+		<title>Empire Burlesque</title>
+		<artist>Bob Dylan</artist>
+		<country>USA</country>
+		<company>Columbia</company>
+		<price>10.90</price>
+		<year>1985</year>
+	</cd>
+
+	<xi:include href="test_includes.xml">
+       <xi:fallback>
+          <p>The Publications Statement should appear in this space. (c) Brown University</p>
+       </xi:fallback>
+    </xi:include>
+</catalog>
+
