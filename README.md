@@ -19,7 +19,7 @@ At this point, only the native Empire Burlesque CD is displayed, indicating that
 ### oxygen gets it right
 
 To see the intended result...
-- I loaded data.xml in oxygen
+- I loaded 'data.xml' in oxygen
 - selected menus Document -> Transformation -> Configure Transformation Scenario
 - selected button New -> XML transformation with XSLT
 - in dialog box...
@@ -28,8 +28,11 @@ To see the intended result...
     - selected the 'Saxon-HE 9.5.1.2' Transformer (at oxygen's suggestion from a previous unsuccessful transform attempt)
 - selected the 'Apply Associated' button -- and got the xml saved as 'oxygen_transform.html'
 
-oxygen_transform.png is a screenshot of that html from Safari.
+[oxygen_transform.png][screenshot_link] is a screenshot of that html from Safari.
 
 ---
 
 To be continued...
+
+
+[screenshot_link]: https://github.com/birkin/sxce_play/blob/master/oxygen_transform.png
