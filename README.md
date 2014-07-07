@@ -32,7 +32,14 @@ To see the intended result...
 
 ---
 
+### plan of attack
+
+E.M. says one approach that should work is to have saxon-ce first apply an 'xi:include processor', [xipr.xsl][github_xipr_link], and _then_ apply the regular stylesheet.
+
+---
+
 To be continued...
 
 
 [screenshot_link]: https://github.com/birkin/sxce_play/blob/master/oxygen_transform.png
+[github_xipr_link]: https://github.com/dret/XIPr
