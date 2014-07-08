@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+
+        <h1>TESTING...</h1>
+
+        <script type="text/javascript" language="javascript" src="saxonce/Saxonce.nocache.js"></script>
+        <script type="text/javascript">
+            // trying out the "low-level JavaScript calls" from `http://www.saxonica.com/ce/user-doc/1.1/html/starting/running/`
+            // ok, this works
+            var onSaxonLoad = function() {
+                var main_xsl = Saxon.requestXML("stylesheet.xsl");
+                var source_xml = Saxon.requestXML("data.xml");
+                var processor2 = Saxon.newXSLT20Processor(main_xsl);
+                processor2.updateHTMLDocument(source_xml);
+            };
+        </script>
+    </body>
+</html>

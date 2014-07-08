@@ -38,6 +38,10 @@ E.M. says one approach that should work is to have saxon-ce first apply an 'xi:i
 
 ---
 
+### resources
+
+- [saxon-ce docs](http://www.saxonica.com/ce/user-doc/1.1/html/starting/running/)
+
 To be continued...
 
 
