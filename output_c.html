@@ -12,13 +12,14 @@
         <script type="text/javascript" language="javascript" src="saxonce/Saxonce.nocache.js"></script>
         <script type="text/javascript">
             // trying out the "low-level JavaScript calls" from `http://www.saxonica.com/ce/user-doc/1.1/html/starting/running/`
-            // ok, this works
+            // hmmm... how to output the initial transform...
             var onSaxonLoad = function() {
+                // initial transform
                 alert( "start" );
-                var main_xsl = Saxon.requestXML( "stylesheet.xsl" );
                 var source_xml = Saxon.requestXML( "data.xml" );
-                var processor = Saxon.newXSLT20Processor( main_xsl );
-                processor.updateHTMLDocument( source_xml );
+                var xinclude_xsl = Saxon.requestXML( "xipr-1-0.xsl" );
+                var processor_a = Saxon.newXSLT20Processor( xinclude_xsl );
+                processor_a.updateHTMLDocument( source_xml );  // I'm thinking this should result in a new xml file with the second cd included, to later be transfored with stylesheet.xsl
                 alert( "end" );
             };
         </script>
