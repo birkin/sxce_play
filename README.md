@@ -26,7 +26,7 @@ To see the intended result...
     - (current file already selected in 'XML URL')
     - selected via folder the 'XSL URL' path to 'stylesheet.xsl'
     - selected the 'Saxon-HE 9.5.1.2' Transformer (at oxygen's suggestion from a previous unsuccessful transform attempt)
-- selected the 'Apply Associated' button -- and got the xml saved as 'oxygen_transform.html'
+- selected the 'Apply Associated' button -- and got the xml saved as `oxygen_transform.html`
 
 [oxygen_transform.png][screenshot_link] is a screenshot of that html from Safari.
 
@@ -35,6 +35,20 @@ To see the intended result...
 ### plan of attack
 
 E.M. says one approach that should work is to have saxon-ce first apply an 'xi:include processor', [xipr.xsl][github_xipr_link], and _then_ apply the regular stylesheet.
+
+---
+
+### no saxon-ce success yet, but oxygen again gets it right
+
+- I got the 'low-level' approach for the basic saxon-ce transform working (xinclude not working), thinking this might help in future work: see `output_b.html`
+
+- I added the xipr xsl file to the project
+
+- I tried transforming it using the low-level approach (`output_c.html`) -- didn't initially see any output, and switched gears to see if I could apply the xipr stylesheet using oxygen, using the steps listed above ('oxygen gets it right').
+
+- That worked; producing valid new source xml (output saved to `oxygen_transform_with_xipr.xml`). I then used oxygen to transform that new source xml with stylesheet.xsl, which worked.
+
+- So I need to get saxon-ce to correctly apply the xipr xsl. Investigating further....
 
 ---
 
