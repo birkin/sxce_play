@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+
+        <h1>TESTING...</h1>
+
+        <script type="text/javascript" language="javascript" src="saxonce/Saxonce.nocache.js"></script>
+        <script type="text/javascript">
+            // trying out the "low-level JavaScript calls" from `http://www.saxonica.com/ce/user-doc/1.1/html/starting/running/`
+            var onSaxonLoad = function() {
+                alert( "start" );
+                // var main_xsl = Saxon.requestXML( "xipr-1-0.xsl" );  // this does _not_ produce a good fragment
+                var main_xsl = Saxon.requestXML( "stylesheet.xsl" );  // this _does_ produces a good fragment that the alert displays
+                var source_xml = Saxon.requestXML( "data.xml" );
+                var processor = Saxon.newXSLT20Processor( main_xsl );
+
+                var y = processor.transformToFragment( source_xml );
+                alert( y );
+
+                var z = Saxon.serializeXML( y );
+                alert( z );
+
+                alert( "end" );
+            };
+        </script>
+    </body>
+</html>
