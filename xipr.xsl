@@ -135,7 +135,7 @@
 					<xsl:sequence select="xipr:message('The xpointer attribute is not allowed for parse=&quot;text&quot;', 'warning')"/>			
 				</xsl:if>
 				<xsl:choose>
-					<xsl:when test="unparsed-text-available($include-uri)">
+					<xsl:when test="unparsed-text-available($include-uri, 'utf-8')">
 						<xsl:value-of select="if ( empty(@encoding) ) then unparsed-text($include-uri) else unparsed-text($include-uri, string(@encoding))"/>
 					</xsl:when>
 					<xsl:otherwise>

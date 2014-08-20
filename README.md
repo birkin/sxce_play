@@ -52,6 +52,12 @@ E.M. says one approach that should work is to have saxon-ce first apply an 'xi:i
 
 ---
 
+### finally
+
+- output_e.html shows success -- but only on 'localhost' in stead of 127.0.0.1
+
+---
+
 ### resources
 
 - [saxon-ce docs](http://www.saxonica.com/ce/user-doc/1.1/html/starting/running/)
